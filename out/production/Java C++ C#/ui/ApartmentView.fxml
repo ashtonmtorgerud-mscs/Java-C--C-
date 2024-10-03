@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ui.ApartmentController"
+            prefHeight="800.0" prefWidth="600.0">
+    <children>
+
+        <GridPane xmlns:fx="http://javafx.com/fxml/1" alignment="center" hgap="10" vgap="10">
+            <columnConstraints>
+                <ColumnConstraints percentWidth="30" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" halignment="RIGHT"/>
+                <ColumnConstraints percentWidth="70" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+
+            <rowConstraints>
+                <RowConstraints minHeight="25" prefHeight="30" maxHeight="Infinity" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="25" prefHeight="30" maxHeight="Infinity" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="25" prefHeight="30" maxHeight="Infinity" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="25" prefHeight="30" maxHeight="Infinity" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="25" prefHeight="30" maxHeight="Infinity" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="25" prefHeight="30" maxHeight="Infinity" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="25" prefHeight="30" maxHeight="Infinity" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="25" prefHeight="30" maxHeight="Infinity" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="25" prefHeight="30" maxHeight="Infinity" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="25" prefHeight="30" maxHeight="Infinity" vgrow="SOMETIMES"/>
+            </rowConstraints>
+
+            <!-- Left Column Labels -->
+            <Label text="Apartment: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Label text="Apartment Num: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Label text="Square Feet: " GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Label text="Bathrooms: " GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Label text="Price: " GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <Label text="Updated: " GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <Label text="Administrator" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+            <Label text="Tenant" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+
+            <!-- Right Column Controls -->
+            <ComboBox fx:id="apartmentComboBox" onAction="#apartmentComboBoxAction" prefHeight="25.0" prefWidth="281.0" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <TextField fx:id="apartmentNumberTextField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <TextField fx:id="squareFeetTextField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <TextField fx:id="bathroomsTextField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+            <TextField fx:id="priceTextField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+            <TextField fx:id="updatedTextField" editable="false" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+            <ComboBox fx:id="administratorComboBox" prefHeight="25.0" prefWidth="281.0" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+            <ComboBox fx:id="tenantComboBox" prefHeight="25.0" prefWidth="281.0" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
+            <Button fx:id="saveApartmentButton" onMouseClicked="#SaveApartment" text="Save Apartment" GridPane.rowIndex="8" GridPane.columnIndex="1"/>
+            <Button fx:id="ViewInvoicesButton" onMouseClicked="#GetInvoices" text="View Invoices" GridPane.rowIndex="9" GridPane.columnIndex="1"/>
+        </GridPane>
+
+    </children>
+
+</AnchorPane>
