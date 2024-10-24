@@ -11,6 +11,8 @@
       <sourceFolder url="file://$MODULE_DIR$/atorgerud2742ex1d1/Ex1d/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/atorgerud2742ex1e1/Ex1d/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/atorgerud2742ex1e1/Ex1d/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/atorgerud2742ex2a1/Ex1d/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/atorgerud2742ex2a1/Ex1d/test" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/Week 1" />
     </content>
     <orderEntry type="inheritedJdk" />
