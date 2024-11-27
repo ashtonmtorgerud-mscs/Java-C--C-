@@ -10,7 +10,7 @@ public class DbContext {
     private static int invoiceID = 10001;
     private static int apartmentID = 10001;
     private static int timeCardID = 10001;
-    private static Boolean scaleID = true;
+    private static Boolean scaleID = false;
     public static String[] theArgs = new String[0];
     public static Apartment selectedApartment = null;
 
